@@ -1,28 +1,32 @@
-# check if an number is a power of 2 or not:
+# check if an number is a power of 2 or not in a given list:
 
 import math
 
 input_list = [2, 4, 6, 4, 100, 31]
 output_list = []
 
+x = 4
 def check_log2(x):
     return(math.log10(x)/math.log10(2));
 
 def check_power2(x):
     print('-----')
-    print('Checking if input number {} is power of 2!'.format(x))
+    print('Checking if input number {} is power of 2'.format(x))
 
 # check base
-check_output = (math.ceil(check_log2(x)) == math.floor(check_log2(x)))
+    check_output = (math.ceil(check_log2(x)) == math.floor(check_log2(x)))
 
-output_list.append(bool(check_output))
+    output_list.append(bool(check_output))
 
-if check_output:
-    print('The number {} is power of 2!'. format(x))
+    if check_output:
+        print('The number {} is power of 2!'. format(x))
 
-else:
-    print('Number {} is NOT power of 2'. format(x))
-return check_output
+    else:
+        print('Number {} is NOT power of 2'. format(x))
+
+    return check_output
+
+
 
 #Run a loop on my input list to check power of 2 for x in input_list:
 
